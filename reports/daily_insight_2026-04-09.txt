@@ -1,0 +1,64 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║         FINTECH ANALYTICS — DAILY INSIGHT REPORT            ║
+║                    April 09, 2026                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 1: DAILY ACTIVE USERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 CRITICAL — Daily Active Users
+DAU has dropped 21.9% compared to last week (77 → 60 users). This is a significant decline that needs immediate attention.
+⚠️  DAU/MAU ratio is 18.0% — below the 20% healthy threshold.
+💡 Action: Investigate drop immediately. Check for app issues, payment failures or competitor activity.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 2: CHURN RISK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 HIGH RISK — Churn Risk
+195 users (34.1%) are At-Risk (last active 8–30 days ago).
+148 users (25.9%) have already Churned (not active 30+ days).
+💰 Revenue at risk    : ₦334,184,678
+💸 Revenue already lost: ₦253,637,602
+💡 Action: Launch re-engagement campaign targeting 195 at-risk users.
+   Suggested: Push notification + savings goal reminder + 0% withdrawal fee offer.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 3: REVENUE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💰 REVENUE INSIGHT
+Total revenue: ₦980,275,055
+Top segment  : power users generate ₦723,493,699 (73.8% of total revenue) despite being only 11.7% of users.
+Top city     : Abuja leads with ₦162,810,783 (16.6% of total revenue).
+💡 Action: Focus retention efforts on power users — losing one power user costs as much as losing 10 regular users.
+   Consider: VIP program, dedicated support, exclusive investment products.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 4: ENGAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 ENGAGEMENT INSIGHT
+Average engagement score: 15.2
+   Power users  : 90.8 (highly engaged)
+   Regular users: 16.1 (moderately engaged)
+   Lurkers      : 1.7 (barely engaged)
+💡 Action: Engagement gap between power and lurker users is 89.1 points.
+   Target lurkers with: savings goal nudges, weekly progress emails,
+   gamification badges to move them into regular segment.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SUMMARY SCORECARD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Avg DAU          : 75 users/day
+   DAU/MAU Ratio    : 18.0%
+   Total Users      : 572
+   Active Users     : 223
+   At-Risk Users    : 195
+   Churned Users    : 148
+   Total Revenue    : ₦980,275,055
+   Top City         : Abuja
+   Avg Engagement   : 15.2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ Generated automatically by Fintech Analytics Pipeline
+ Dashboard: fintech_dashboard.pbix
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

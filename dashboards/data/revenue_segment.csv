@@ -1,0 +1,4 @@
+user_segment,users,transactions,total_revenue,avg_transaction,revenue_per_user
+power,67,3564,723493699.35,203000.48,10798413.42
+regular,123,1002,204343158.75,203935.29,1661326.49
+lurker,201,281,52438197.26,186612.8,260886.55

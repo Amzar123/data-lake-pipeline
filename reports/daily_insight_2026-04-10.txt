@@ -1,0 +1,57 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║       FINTECH ANALYTICS — DAILY INSIGHT REPORT              ║
+║                   April 10, 2026                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 1: DAILY ACTIVE USERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 CRITICAL DROP
+DAU change vs last week : -22.1%
+Latest DAU              : 60 users
+⚠️  DAU/MAU ratio is 17.9% — below 20% healthy threshold.
+Action: Investigate immediately. Check for app issues or competitor activity.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 2: CHURN RISK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+At-Risk users  : 195 (34.1% of total)
+Churned users  : 148
+Revenue at risk: ₦334,184,678
+Action: Launch re-engagement campaign targeting 195 at-risk users.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 3: REVENUE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total revenue   : ₦980,275,055
+Top segment     : power — ₦723,493,699
+Top city        : Abuja — ₦162,810,783
+Action: Focus retention on power users — highest revenue impact.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SECTION 4: ENGAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Avg engagement score : 15.2
+Power users          : 90.8
+Regular users        : 16.1
+Lurkers              : 1.7
+Engagement gap       : 89.1 points
+Action: Target lurkers with savings nudges and gamification badges.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ SUMMARY SCORECARD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Avg DAU        : 75 users/day
+DAU/MAU Ratio  : 17.9%
+Total Users    : 572
+Active Users   : 223
+At-Risk Users  : 195
+Churned Users  : 148
+Total Revenue  : ₦980,275,055
+Top City       : Abuja
+Avg Engagement : 15.2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Generated automatically by Fintech Analytics Pipeline
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
