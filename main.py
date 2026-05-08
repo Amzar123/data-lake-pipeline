@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from minio_client import MinioClient
+from minio_pipeline import MinioClient
 from airflow_client import AirflowClient
 from config import settings
 import uvicorn
