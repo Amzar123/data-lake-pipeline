@@ -3,3 +3,7 @@ airflow/logs/
 airflow/db/
 __pycache__/
 *.pyc
+
+/logs/
+
+.vscode/

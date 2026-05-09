@@ -1,8 +1,12 @@
+from pathlib import Path
+from typing import Optional
+
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from minio_pipeline import MinioClient
-from airflow_client import AirflowClient
-from config import settings
+from minioclient.minio_client import MinioClient
+from airflow.airflow_client import AirflowClient
+from pipeline.pipeline_ingest import RAW_DATA_DIR, upload_raw_directory
+from pipeline.pipeline_visualization import run_visualization_pipeline
 import uvicorn
 
 app = FastAPI(title="Pipeline Backend", version="1.0.0")
@@ -58,12 +62,56 @@ def list_files(bucket_name: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.post("/pipeline/upload/raw/{bucket_name}")
+def upload_raw_data(bucket_name: str, source_dir: Optional[str] = None):
+    """Upload all local raw files from data/raw to MinIO via API."""
+    try:
+        target_dir = Path(source_dir).expanduser().resolve() if source_dir else RAW_DATA_DIR
+        count = upload_raw_directory(bucket_name, target_dir)
+        return {
+            "message": "Raw data uploaded to MinIO",
+            "bucket": bucket_name,
+            "source_dir": str(target_dir),
+            "uploaded_files": count,
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.delete("/files/{bucket_name}/{object_name}")
 def delete_file(bucket_name: str, object_name: str):
     """Delete a file from MinIO."""
     try:
         minio.delete_file(bucket_name, object_name)
         return {"message": f"{object_name} deleted from {bucket_name}"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/pipeline/preprocess")
+def preprocess_raw_to_clean(
+    raw_bucket: str = "fintech-data-lake",
+    output_bucket: str = "fintech-data-warehouse",
+):
+    """Preprocess all raw data from MinIO bucket into clean, analysis-ready format in output bucket."""
+    try:
+        summary = preprocess_minio_data(raw_bucket, output_bucket)
+        return {
+            "message": "Raw data preprocessed successfully",
+            "summary": summary,
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/pipeline/visualize")
+def run_visualization():
+    """Load preprocessed data to PostgreSQL and setup Superset visualizations."""
+    try:
+        run_visualization_pipeline()
+        return {
+            "message": "Visualization pipeline completed"
+        }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

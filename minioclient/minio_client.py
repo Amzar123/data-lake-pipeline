@@ -1,15 +1,17 @@
 import io
+import os
+from dotenv import load_dotenv
 from minio import Minio
 from minio.error import S3Error
-from config import settings
 
+load_dotenv()
 
 class MinioClient:
     def __init__(self):
         self.client = Minio(
-            endpoint=settings.MINIO_ENDPOINT,
-            access_key=settings.MINIO_ACCESS_KEY,
-            secret_key=settings.MINIO_SECRET_KEY,
+            endpoint=os.getenv("MINIO_ENDPOINT", "minio:9000"),
+            access_key=os.getenv("MINIO_ACCESS_KEY", "minioadmin"),
+            secret_key=os.getenv("MINIO_SECRET_KEY", "minioadmin"),
             secure=False,
         )
 

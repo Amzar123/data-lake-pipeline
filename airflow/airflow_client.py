@@ -1,11 +1,13 @@
 import requests
-from config import settings
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class AirflowClient:
     def __init__(self):
-        self.base_url = settings.AIRFLOW_BASE_URL
-        self.auth = (settings.AIRFLOW_USERNAME, settings.AIRFLOW_PASSWORD)
+        self.base_url = os.getenv("AIRFLOW_BASE_URL", "http://airflow-webserver:8080")
+        self.auth = (os.getenv("AIRFLOW_USERNAME", "airflow"), os.getenv("AIRFLOW_PASSWORD", "airflow"))
 
     def _get(self, path: str) -> dict:
         response = requests.get(f"{self.base_url}/api/v1{path}", auth=self.auth)
